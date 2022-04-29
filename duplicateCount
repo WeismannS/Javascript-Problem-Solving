@@ -1,0 +1,4 @@
+function duplicateCount(text){
+    const arr =  text.toLowerCase().split("")
+   return new Set(arr.filter((e,i)=> arr.includes(e,i+1))).size
+   }
